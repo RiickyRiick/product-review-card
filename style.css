@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    margin: 30px auto;
+    padding: 0 30px;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+    display: inherit;
+}
+
+
+.card-content {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.product {
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.product-name {
+    color: hsl(212, 21%, 14%);
+    font-size: 31px;
+    font-weight: 700;
+    font-family: 'Fraunces',sans-serif;
+}
+
+.product-des {
+    color: hsl(228, 12%, 48%);
+    line-height: 20px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.new-price {
+    color: hsl(158, 36%, 37%);
+    font-size: 31px;
+    font-family: 'Fraunces',sans-serif;
+    font-weight: 700;
+    padding-right: 15px;
+}
+
+.old-price {
+    color: hsl(158, 36%, 37%);
+    text-decoration: line-through;
+}
+
+.button {
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    justify-content: center;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.button p {
+    color: hsl(0, 0%, 100%);
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.button:hover {
+    background-color: hsl(158, 42%, 18%);
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+    
+}
+
+.attribution img {
+    width: 12px;
+    margin-left: 3px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+a {
+    margin-left: 5px;
+}
+
+.bottom {
+    padding-left: 5px;
+}
+
+
+@media only screen and (max-width: 628px) {
+    .card {
+        grid-template-columns: 1fr;
+    }
+
+    .img img {
+        max-height: 350px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .product, .product-name, .product-des, .price {
+        padding-bottom: 23px;
+    }
+
+    .button {
+        padding: 18px;
+    }
+
+    .attribution {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 50px;    
+    }
+
+
+}
+
+@media only screen and (max-width: 488px) {
+    
+    .img img {
+        max-height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .attribution {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 45px;
+    }
+
+}
+
+
+@media only screen and (max-width: 426px) {
+    .card-container {
+        margin: 15px auto;
+        padding: 0 15px;
+    }
+
+    .img img {
+        max-height: 290px;
+    }
+
+    .card-content {
+        padding: 24px;
+    }
+
+}
+
