@@ -1,8 +1,7 @@
 # Frontend Mentor - Ricky's 'product preview card component' solution
 
-<figure>
+
 <img scr="./design/desktop-preview.jpg"/>
-<figcaption>Desktop Preview</figure>
 
 This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -26,33 +25,25 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ## Overview
 
-This project defintely tested my patience. I restarted the project 4x; a total of 5x writing code for this design. 
+This project tested my patience. I restarted the project four times, a total of five times, writing code for this design. 
 
-Reason being, I didn't have any structure or planned my code ahead of time (i.e., trying to make sense 
-
-of what I'm about to execute). This in return, made me disorganized throughout the project and I began complicating 
-
-simple solutions to even more difficult tasks (more on this in the ### 'What I learned' section). I eventually got 
-
-help from <a href="https://www.youtube.com/watch?v=9aDqk7jUMZQ" target="_blank">'Mr Coder'</a>, the other reason I wrote the code again. 
+The reason is that I didn't have a structure or plan my code ahead of time (i.e., trying to make sense of what I was about to execute). This, in return, made me disorganized throughout the project, and I began complicating simple solutions to complex tasks (more on this in the ### 'What I learned' section). I eventually got help from <a href="https://www.youtube.com/watch?v=9aDqk7jUMZQ" target="_blank">'Mr Coder'</a>, the other reason I wrote the code again. 
 
 That said: 
 
 (Same Day)
---I wrote the first execution of the code through my own knowledge 
---Second execution, deleted everything tried it all over again
---Third execution was trying to fix errors within the second execution
---Fourth execution, deleted eveything again and followed along Mr Coder 
+--I wrote the first execution of the code through my knowledge 
+--Second execution, deleted everything, tried it all over again
+--The third execution was trying to fix errors within the second execution
+--Fourth execution, deleted everything again and followed along with Mr Coder 
 ____________________________________________________________________
 (Next Day)
---Reviewd my notes and planned out my code and deleted the code again
---Fifth execution I coded the design with eveything I've learnt from Mr Coder and used my other projects as reference points as well 
+--Reviewed my notes and planned out my code, and deleted the code again
+--Fifth execution, I coded the design with everything I've learnt from Mr Coder and used my other projects as reference points as well 
 
-For me, there is such an adavantage when you hold yourself accountable when following a video along. I tend to test myself after the 
+For me, there is a significant advantage to holding yourself accountable when following a video alone. I test myself after watching the video to fully grasp the definitions and concepts, which helps me stay honest and continue learning. 
 
-video in order for me to fully grasp the definitions and concepts, helping me to always stay honest and to continue learning. 
-
-Happy coding & Blessings to all 
+Happy coding & Blessings to all!
 
 
 ### The challenge
@@ -75,13 +66,13 @@ Users should be able to:
 
 ## My process
 
-* I usually speak first on HTML and the CSS afterwards, but on this project I need to speak about both at the same, since there was so much correlation between them. Seperating them would be too much of a hassle to try and make sense of things 
+* I usually speak first about HTML and then CSS afterwards, but on this project, I need to discuss both simultaneously, since there was a significant correlation between them. Separating them would be too much of a hassle to try to make sense of things 
 
 HTML & CSS: 
 
-My HTML process started off super disorganized by not creating proper class names nor using HTML semantics, and making unecessary groupings that led to difficult implementation of the Flexbox Rule:
+My HTML process started super disorganized by not creating proper class names and not using HTML semantics, and making unnecessary groupings that led to the complex implementation of the Flexbox Rule:
 
---I was grouping 'PERFUME, the Product name and the description' all in one container. 
+--I was grouping 'PERFUME, the Product name, and the description' all in one container. 
 I then grouped the 'price and button' all in one container, which ended up not being 
 as effective:
 
@@ -119,9 +110,9 @@ flex-direction: column;
 justify-content: space-around;
 }
 ```
-I wasn't seeing proper spacing-around my items within my .card since they were not grouped correctly, so the space was just created by 2 items. 
+I wasn't seeing proper spacing around my items within my .card since they were not grouped correctly, so only two items created the space. 
 
---Now before I corrected this mistake, I went even further adding more errors by trying to only fix the CSS and not the HTML:
+--Now, before I corrected this mistake, I went even further, adding more errors by trying only to fix the CSS and not the HTML:
 
 ```css
   .card > h6 {
@@ -135,10 +126,10 @@ I wasn't seeing proper spacing-around my items within my .card since they were n
   }
 ```
 
-...take in mind I also did this for the .price section and the button. It was a pain once I had to shrink the screen size down. Nothing maintain itself within the containers, since everthing was positioned out placed, clearly.
+...I also did this for the price section and the button. It was a pain once I had to shrink the screen size down. Nothing remained within the containers, as everything was positioned out of place.
 
-I corrected this by creating 5 items in order for the Flexbox to repsond properly, and gave 
-them proper names:
+I corrected this by creating five items for the Flexbox to respond appropriately, and gave 
+The proper names:
 
  (I also didn't realize that you can put classes within the HTML tags)
 
@@ -172,16 +163,16 @@ them proper names:
 }
   ```
 
-... this then worked like a charm; spacing all items out evenly. 
+... This then worked like a charm, spacing all items out evenly. 
 
---Another difficult task I had was putting the img and content side by side using Flex-box to .card. At first I used CSS Grid but it easier using Flexbox:
+--Another difficult task I had was putting the img and content side by side using Flex-box to .card. At first I used CSS Grid, but it's easier using Flexbox:
 
 ```css
 .card {
   display: flex;
 }
 ```
-...this did put the image and content next one another, however, I was struggling to make everything responsive. In the end, this was making things more complicated for me (maybe this could have still worked) despite how easy it was to use. I then used CSS Grid again since it made sense to use it after seeing <a href="https://www.youtube.com/watch?v=9aDqk7jUMZQ" target="_blank">'Mr Coder's</a> explanation for it: 
+...this did place the image and content next to each other. However, I was struggling to make everything responsive. In the end, this made things more complicated for me (perhaps it could still have worked), despite how easy it was to use. I then used CSS Grid again since it made sense to use it after seeing <a href="https://www.youtube.com/watch?v=9aDqk7jUMZQ" target="_blank">'Mr Coder's</a> explanation for it: 
 
 ```css
 .card {
@@ -194,7 +185,7 @@ them proper names:
 }
 ```
 
---After all this eveything else was very easy to execute, i.e., fonts, color, font size, line-height, and the rest of the samll details. 
+--After all this, everything else was very easy to execute, i.e., fonts, color, font size, line-height, and the rest of the small details. 
 
 
 
@@ -211,9 +202,9 @@ them proper names:
 
 ### What I learned
 
-Main takeways I learned from this project were how to:
+The main takeaways I learned from this project were how to:
 
---properly name the tags 
+--Properly name the tags 
 --group items
 --implement CSS Grid & Flexbox with one another
 
